@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vamtech Software</title>
-    <!-- agregar las etiquetas metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vamtech Software">
+    <meta name="description" content="Web Institucional de Vamtech Software">
+    <meta name="keywords"
+        content="html, desarrollo web, programacion, developers, desarrollo, frontend, backend, base de datos, angular, css">
     <script src="https://kit.fontawesome.com/aa27cc17ac.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,195 +18,391 @@
 </head>
 
 <body>
-    <main class="bg bg-light">
-        <nav class=" fixed-top navbar navbar-expand-lg navbar-dark azul">
+    <header class="bg bg-light">
+        <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand ml-5" href="#">Vamtech Software</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
+                <div>
+                    <a class="navbar-brandtext-primary" href="indexIngles.html"> <img src="img/vamtech-marca.png"
+                            class="w-75" alt="..."></a>
+                    <button class="navbar-toggler ml-3" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">La empresa</a>
+                            <a class="nav-link" href="#servicios">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nuestros Valores</a>
+                            <a class="nav-link" href="#empresa">Company</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">¿Qué Ofrecemos?</a>
+                            <a class="nav-link" href="#tecnologias">Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contact</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle ml-5" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Idioma
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Español</a>
-                                <a class="dropdown-item" href="#">English</a>
-                            </div>
-                        </li>
+                        <button class="btn btn-outline-primary mx-5"><a href="index.html">Español</a></button>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="marginsup">
-            <div class="card bg text-white">
-                <img src="img/videobanner.gif" class="card-img" alt="...">
+    </header>
+    <div id="fixed-bg">
+        <img src="img/bg0.jpg" alt="" width="100%">
 
-                <div class="card-img-overlay">
-                    <div class="">
-                        <h5 class="card-title text-center display-4 mt-1">Bienvenidos!</h5>
-                        <p class="card-text text-center">Best Software company since 2020.</p>
-                        <div class="text-center">
-                            <img class="py-2" src="img/vamtech-logo.PNG" alt="vamtech-logo" width="7%">
-                        </div>
+    </div>
+    <!-- SLIDER -->
+    <article class="marginsup">
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <img src="img/slider1.png" class="d-block w-100" alt="fondo-azul">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h1 class="display-3 sombra-texto">Welcome!</h1>
+                        <p class="sombra-texto">We take care that digital intelligence adapts to your company to
+                            streamline processes that increase productivity and sales.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="sombra-texto">Software Development</h3>
+                        <p class="sombra-texto">We work in product development or projects to obtain
+                            of applications tailored to the needs of our customers. We continue in all
+                            cases a development methodology, opting for SCRUM depending on the typology of the
+                            project, and applying the procedures and controls of our management system of the
+                            Quality. We seek utility and efficiency when guaranteeing perfect results.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="sombra-texto"> Web Design</h3>
+                        <p class="sombra-texto">According to your needs we propose several options to display
+                            your business to the world: We prepare an initial version of the work to be done and,
+                            through
+                            continuous interaction with the client, we are applying the successive improvements and
+                            changes that
+                            emerging.</p>
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <article class="jumbotron jumbotron-fluid">
-            <h2 class="display-5 text-center mt-4">La empresa
-            </h2>
-            <section class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 my-4">
-                        <h1 class="display-4 text-center w-100 ">NUESTRA HISTORIA</h1>
-                        <p>Cocu abrió en diciembre de 2012. Fue por pasión que Morgan Chauvel decidió comenzar un giro
-                            de 180 grados en su carrera con los principales objetivos: difundir la cultura francesa en
-                            Argentina y producir la mejor baguette en Buenos Aires.
-                            Nuestra primer preocupacion es la calidad de nuestro productos.
-                            La elaboracion con materia prima local cuidadosamente seleccionada y con nuestras recetas -
-                            100% francesa y de fabricación manual, respetando absolutamente la tradición artesanal que
-                            creó la reputacion del pan francés en el mundo.
-                            La coccion de todos nuestros panes, de nuestra pastelería y otras esoecialidades, constituye
-                            cada dia un momento mágico, gracias al horno ubicado en el centro de la panadería y a la
-                            vista de nuestros clientes, a quies brindamos la posibilidad de consumir los productos en el
-                            salón, mientras suenan los clasicos de la musica francesa y tamien de comprarlos para llevar
-                            y seguir disfrutando...
-                            Si estás buscando una auténtica expericnea francesa, en el momento del almueszo o merienda,
-                            vení a Cocu.
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-6 my-4">
-                        <img src="img/historia.png" alt="historia1" class="w-100">
-                    </div>
-                    <div class="col-sm-12 col-md-6 my-3">
-                        <img src="img/historia2.jpg" alt="historia2" class="w-100">
-                    </div>
-                    <div class="col-sm-12 col-md-6 my-3">
-                        <h1 class="display-4 text-center w-100 ">COCU, EL NOMBRE</h1>
-                        <p class="lead text-secundary">¿Querés saber por que los franceses cuando entran en Cocu lo
-                            hacen sonriendo? Porque Cocu significa "cornudo".</p>
-                        <p>Queríamos transmitir nuestra esencia con un nombre que es bien nuestro, Somos jóvenes
-                            emprendedores con muchos conceptos nuevos en la cabeza, pero tambien muy apegados a nuestras
-                            raíces francesas. Por lo que nada nnos pareció tan pertinente como inspirarnos en el film
-                            “La mujer del panadero” de Marcel Pagnol - clasico de la cinematofia francesa- que cuenta
-                            que el panadera, cornudo y triste por el abandono de su mujer, deja de elaborar su pan,
-                            haciendo que todo el pueblo se movilice para encontrarla.
-                            La leyenda que nace de esta historria dice que un panadero trabaja tanto y es tan fuerte su
-                            pasión por el pan, que su mujer, cansada de estar sola, lo engaña con otro...
-                            Y es así, que quisimos propagar esta leyenda, haciendo nuesta propia historia. Creamos a
-                            Laurent, nuestro panadero, que se enamora de Marion, pero que tiene tal pasión por sus
-                            productos que no logra equilibrar su vida, haciendo que ella lo deje solo con sus productos.
-                            Marion le da un portazo, diciendo “te amo hasta la locura” pero esta relacion ... es
-                            imposible.
-                            Por eso, los mostradores de Cocu están hechos con puertas antiguas, que representan los
-                            portazos que las mujeres dieron a nuestro panadero.
-                        </p>
-                    </div>
-        </article>
-        </section>
-        </article>
+    </article>
+    <section class="bg-light text-center py-2">
+        </div>
+        <!-- BOTON MAL UBICADO -->
+        <!-- <div class="d-flex align-items-end flex-column margen-btn">
+            <div class="whatsapp">
+                <a href="##" target="_blank">
+                    <img src="img/whatsapp.png" alt="whatsapp" class="m-2">
+                </a>
+            </div> -->
         <div class="container">
-            <article>
-                <h2 class="display-5 text-center mt-4">Nuestro Valores
-                </h2>
-
-                <div class="row text-center shadow p-3 mb-5 bg-white rounded">
-                    <div class="col-sm-12 col-md-4">
-                        <i class="fas fa-fist-raised fa-5x my-3 text-primary"></i>
-                        <p class="lead"> Determinación</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dignissimos numquam illum
-                            molestiae natus. Consequatur nemo reiciendis placeat totam facilis!
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <i class="fas fa-laptop-house fa-5x my-3 text-primary"></i>
-                        <p class="lead"> Compromiso</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dignissimos numquam illum
-                            molestiae natus. Consequatur nemo reiciendis placeat totam facilis!
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <i class="fas fa-hands-helping fa-5x my-3 text-primary"></i>
-                        <p class="lead"> Respeto</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dignissimos numquam illum
-                            molestiae natus. Consequatur nemo reiciendis placeat totam facilis!
-                        </p>
+            <h2 class="py-2" id="servicios">Services</h2>
+            <div class="d-flex flex-wrap justify-content-around">
+                <div class="card col-sm-8 col-md-4 col-lg-3 shadow mb-3">
+                    <i class="fab fa-audible fa-5x my-3 text-color py-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-text"> Web Design</h5>
                     </div>
                 </div>
-                <h2 class="display-5 text-center mt-4">¿Qué Ofrecemos?
-                </h2>
-            </article>
-            <section class="bg bg-light">
-                <h2 class="display-5 text-center mt-4" id="contacto">Contactanos
-                </h2>
-                <article class="row no-gutters my-4">
-                    <div class="col-md-6">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0158654000975!2d-65.20744498436153!3d-26.839447683159275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c08de6307f3%3A0xdb8df6a7c4ad5190!2sCongreso%20de%20Tucum%C3%A1n%20603%2C%20T4000IEM%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1589675347474!5m2!1ses-419!2sar"
-                            width="100%" height="400px" frameborder="0" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
+                <div class="card col-sm-8 col-md-4 col-lg-3 shadow mb-3">
+                    <i class="fas fa-code fa-5x my-3 text-color py-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-text">Software Development</h5>
                     </div>
-
-                    <div class="col-md-6 px-4 mt-4">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Nombre y Apellido</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Mauricio G. Castro" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="tucorreo@mail.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Deje su consulta:</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                    placeholder="Quiero hacer una pregunta sobre..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
+                </div>
+                <div class="card col-sm-8 col-md-4 col-lg-3 shadow mb-3">
+                    <i class="fab fa-buffer fa-5x my-3 text-color py-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-text">Graphic Design</h5>
                     </div>
-                </article>
-            </section>
+                </div>
+
+            </div>
+    </section>
+    <section class="bg-white text-center py-2">
+        <div class="container">
+            <h2 class="py-2" id="empresa">Company</h2>
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-md-6 my-4">
+                    <h4 class="text-center w-100 ">OUR STORY</h4>
+                    <p>VamTech, is a Software company that advances according to technological change, getting in tune
+                        with the corporate needs of organizations and making applications serve in
+                        the operational context of the critical areas. That is why it was born to be able to put at the
+                        service
+                        of our clients, years of experience of each of our ingredients, in order to provide
+                        solutions that adapt to each specific need.
+
+
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 my-4">
+                    <img src="img/historia.png" alt="historia1" class="w-75">
+                </div>
+                <div class="col-sm-12 col-md-6 my-3">
+                    <img src="img/hacemos.png" alt="historia2" class="w-75">
+                </div>
+                <div class="col-sm-12 col-md-6 my-3">
+                    <h4 class="text-center w-100 ">WHAT WE DO</h4>
+                    We are a custom software company with a multidisciplinary team. We take care that the
+                    digital intelligence adapts to your company to streamline processes that increase productivity and
+                    sales. </p>
+                </div>
+                <div class="col-sm-12 col-md-6 my-4">
+                    <h4 class="text-center w-100 ">OUR VISION</h4>
+                    <p>We know that the future comes hand in hand with technology. A key tool to improve
+                        processes, communicate better, reduce costs and streamline tasks. Information Technologies and
+                        Communication (ITC) allows us to optimize company processes and seek answers
+                        specific and adapted to each business. Our way of working is based on creating solutions to
+                        measured for each client using agile development methodologies. Which implies that we are
+                        capable of adapting to the demands of any project and company.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 my-4">
+                    <img src="img/vision.png" alt="historia1" class="w-75">
+                </div>
+                <div class="col-sm-12 col-md-6 my-3">
+                    <img src="img/mision.png" alt="historia2" class="w-75">
+                </div>
+                <div class="col-sm-12 col-md-6 my-3">
+                    <h4 class="text-center w-100 ">OUR MISION</h4>
+                    <p>Our mission is to solve the needs of our clients by relying on the new
+                        technologies to adapt them to your environment and enhance your digital transformation. Our
+                        efforts are aimed at creating concrete solutions for specific problems, starting with
+                        always with agile development methodologies.
+                    </p>
+                </div>
+
+            </div>
+    </section>
+    <section class="bg-light text-center py-2">
+        <div class="container">
+            <h2 class="py-2">OUR VALUES</h2>
+            <div class="row text-center shadow p-3 mb-5 bg-white rounded">
+                <div class="col-sm-12 col-md-4">
+                    <i class="fas fa-fist-raised fa-5x my-3 text-color"></i>
+                    <p class="lead"> Determination</p>
+                    <p>We make important decisions every day to be considered an effective solution.
+                        We are prepared to do so and we have the support of expert professionals.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fas fa-laptop-house fa-5x my-3 text-color"></i>
+                    <p class="lead"> Compromise</p>
+                    <p>We take the goals of our clients as our own, and we contribute to achieve them. We make sure
+                        that the quality of our work and the deadlines assumed are met as agreed.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fas fa-hands-helping fa-5x my-3 text-color"></i>
+                    <p class="lead"> Respect</p>
+                    <p>We respect people by providing opportunities and valuing every opinion.
+
+                        We respect our clients by complying with the agreements, being frank, direct and
+                        transparent.
+
+                        We respect the environment by promoting remote work.
+
+
+                    </p>
+                </div>
+            </div>
+    </section>
+    <section class="bg-white text-center py-2">
+        <div class="container">
+            <h2 class="py-2" id="tecnologias">Tech</h2>
+            <div class="my-4">
+                <h4>Frontend</h4>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="img/front1.png" alt="vue" class="shadow m-2">
+                    <img src="img/front2.png" alt="angular" class="shadow m-2">
+                    <img src="img/front3.png" alt="html" class="shadow m-2">
+                    <img src="img/front4.png" alt="css" class="shadow m-2">
+                    <img src="img/front5.png" alt="javascript" class="shadow m-2">
+                    <img src="img/front6.png" alt="dotnet" class="shadow m-2">
+                    <img src="img/front7.png" alt="websocket" class="shadow m-2">
+                    <img src="img/front8.png" alt="netcore" class="shadow m-2">
+                    <img src="img/front9.png" alt="ioninc" class="shadow m-2">
+                    <img src="img/front10.png" alt="bootstrap" class="shadow m-2">
+                    <img src="img/front11.png" alt="mvc" class="shadow m-2">
+
+
+                </div>
+            </div>
+            <div class="my-2">
+                <h4>Backend</h4>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="img/back1.png" alt="nihibernate" class="shadow m-2">
+                    <img src="img/back2.png" alt="entity fwk" class="shadow m-2">
+                    <img src="img/back3.png" alt="firebase" class="shadow m-2">
+                    <img src="img/back4.png" alt="mongodb" class="shadow m-2">
+                    <img src="img/back5.png" alt="mysql" class="shadow m-2">
+                    <img src="img/back6.png" alt="oracle" class="shadow m-2">
+                    <img src="img/back7.png" alt="sql" class="shadow m-2">
+                    <img src="img/back8.png" alt="dotnet" class="shadow m-2">
+                    <img src="img/back9.png" alt="nodejs" class="shadow m-2">
+                    <img src="img/back10.png" alt="microservicios" class="shadow m-2">
+                    <img src="img/back11.png" alt="restapi" class="shadow m-2">
+                    <img src="img/back12.png" alt="dapper" class="shadow m-2">
+                </div>
+            </div>
         </div>
-    </main>
+        <div class="my-2">
+            <h4>Design</h4>
+            <div class="d-flex flex-wrap justify-content-center">
+                <img src="img/design1.png" alt="illustrator" class="shadow m-2">
+                <img src="img/design2.png" alt="photoshop" class="shadow m-2">
+                <img src="img/design3.png" alt="adobe xd" class="shadow m-2">
+                <img src="img/design4.png" alt="figma" class="shadow m-2">
+            </div>
+        </div>
+
+    </section>
+    <section class="bg-light text-center py-2">
+        <div class="container">
+            <h2 class="py-2">Work Flow</h2>
+            <div class="row d-flex flex-wrap justify-content-center my-2">
+                <div>
+                    <img src="img/tech1.png" alt="">
+                    <h4>Brainstorming</h4>
+                </div>
+                <div>
+                    <img src="img/tech2.png" alt="">
+                    <h4>Design</h4>
+                </div>
+
+                <div>
+                    <img src="img/tech3.png" alt="">
+                    <h4>Developing</h4>
+                </div>
+                <div>
+                    <img src="img/tech4.png" alt="">
+                    <h4>Test</h4>
+                </div>
+                <div>
+                    <img src="img/tech5.png" alt="">
+                    <h4>Deployment</h4>
+                </div>
+            </div>
+    </section>
+    <section class="text-center py-5">
+        <div class="container">
+            <h2 class="py-2">TEAM</h2>
+            <div class="row d-flex flex-wrap justify-content-around">
+                <div class="card col-sm-8 col-md-4 col-lg-2 shadow mb-3">
+                    <div class="my-4">
+                        <img src="img/avatar1.png" alt="" class="w-75">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text"><b>Fernando Sánchez</b></h5>
+                        <p>Backend Developer</p>
+                    </div>
+                </div>
+                <div class="card col-sm-8 col-md-4 col-lg-2 shadow mb-3">
+                    <div class="my-4">
+                        <img src="img/avatar2.png" alt="" class="w-75">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text"><b>Dario Juárez</b></h5>
+                        <p>Scrum Master & Team Leader</p>
+                    </div>
+                </div>
+                <div class="card col-sm-8 col-md-4 col-lg-2 shadow mb-3">
+                    <div class="my-4">
+                        <img src="img/avatar3.png" alt="" class="w-75">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text"><b>Mauricio G. Castro</b></h5>
+                        <p>UX/UI & Web Designer</p>
+                    </div>
+                </div>
+                <div class="card col-sm-8 col-md-4 col-lg-2 shadow mb-3">
+                    <div class="my-4">
+                        <img src="img/avatar4.png" alt="" class="w-75">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text"><b>Pablo ALcorta</b></h5>
+                        <p>Frontend Developer</p>
+                    </div>
+                </div>
+
+    </section>
+    <section class="bg-light py-2">
+        <div class="container">
+            <h2 class="py-2 text-center" id="contacto">Contact</h2>
+            <article class="row no-gutters my-4">
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0158654000975!2d-65.20744498436153!3d-26.839447683159275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c08de6307f3%3A0xdb8df6a7c4ad5190!2sCongreso%20de%20Tucum%C3%A1n%20603%2C%20T4000IEM%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1589675347474!5m2!1ses-419!2sar"
+                        width="100%" height="400px" frameborder="0" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+
+                <div class="col-md-6 px-4 mt-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Name and Surname</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your Name and Surname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="youremail@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ask a question:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="I want to ask a question about ..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary">Send</button>
+                    </form>
+                </div>
+            </article>
+    </section>
+
+
     <footer class="azul text-light py-4">
         <div class="container text-center">
-            <p class="lead mt-3"><strong>Vamtech Software</strong></p>
+            <div class="mb-3">
+                <img src="img/vamtech-marca.png" class="w-10" alt="logo de la empresa">
+            </div>
 
-            <a href="https://www.linkedin.com/in/mauricio-g-castro-0a75bb122/" target="_blank"><i
-                    class="fab fa-linkedin-in fa-2x text-light"></i></a>
-            <a href="https://github.com/MauricioGCastro" target="_blank"><i
-                    class="fab fa-github fa-2x mx-2 text-light"></i></a>
-            <a href="https://gitlab.com/MauricioGCastro" target="_blank"><i
-                    class="fab fa-gitlab fa-2x text-light"></i></a>
-            <a href="https://www.behance.net/MauricioGCastro" target="_blank"><i
-                    class="fab fa-behance fa-2x mx-2 text-light"></i></a>
-            <a href="https://www.instagram.com/mauriciogabriel/" target="_blank"><i
-                    class="fab fa-instagram fa-2x text-light"></i></a>
+            <a href="https://www.linkedin.com/company/68814925/" target="_blank"><i
+                class="fab fa-linkedin-in fa-2x text-light"></i></a>
+
+        <a href="https://www.facebook.com/Vamtech-Software-104462444752566" target="_blank"><i
+                class="fab fa-facebook fa-2x text-light"></i></a>
+        <a href="https://www.behance.net/rrhhvamtech?tracking_source=search_users_recommended%7Cvamtech" target="_blank"><i
+                class="fab fa-behance fa-2x mx-2 text-light"></i></a>
+        <a href="https://www.instagram.com/vamtech_software/" target="_blank"><i
+                class="fab fa-instagram fa-2x text-light"></i></a>
+        <a href="https://twitter.com/SoftwareVamtech" target="_blank"><i
+                class="fab fa-twitter fa-2x text-light"></i></a>
+
             <hr>
-            <p>&copy; Todos los Derechos Reservados - Vamtech 2020</p>
+            <p>&copy; Todos los Derechos Reservados - Vamtech Software 2020</p>
         </div>
     </footer>
 

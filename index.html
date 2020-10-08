@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vamtech Software</title>
-    <!-- agregar las etiquetas metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vamtech Software">
+    <meta name="description" content="Web Institucional de Vamtech Software">
+    <meta name="keywords"
+        content="html, desarrollo web, programacion, developers, desarrollo, frontend, backend, base de datos, angular, css">
     <script src="https://kit.fontawesome.com/aa27cc17ac.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,8 +22,8 @@
         <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
                 <div>
-                    <a class="navbar-brandtext-primary" href="#"> <img src="img/vamtech-marca.png" class="w-75"
-                            alt="..."></a>
+                    <a class="navbar-brandtext-primary" href="index.html"> <img src="img/vamtech-marca.png" class="w-75"
+                            alt="logo de la empresa"></a>
                     <button class="navbar-toggler ml-3" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
@@ -28,23 +32,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Servicios</a>
+                            <a class="nav-link" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Empresa</a>
+                            <a class="nav-link" href="#empresa">Empresa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tecnologías</a>
+                            <a class="nav-link" href="#tecnologias">Tecnologías</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
-                        <button class="btn btn-outline-primary ml-5">English</button>
+                        <button class="btn btn-outline-primary mx-5"><a href="indexIngles.html">English</a></button>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <div id="fixed-bg">
+        <img src="img/bg0.jpg" alt="" width="100%">
+
+    </div>
     <!-- SLIDER -->
     <article class="marginsup">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -54,25 +62,34 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/slider1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="display-3 sombra-texto">Bienvenido</h1>
-                        <p class="sombra-texto">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div class="carousel-item active text-center">
+                    <img src="img/slider1.png" class="d-block w-100" alt="fondo-azul">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h1 class="display-3 sombra-texto">¡Bienvenido!</h1>
+                        <p class="sombra-texto">Nos encargamos de que la inteligencia digital se adapte a tu empresa
+                            para agilizar procesos que aumenten la productividad y las ventas.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/slider2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="sombra-texto">Segundo Slider</h3>
-                        <p class="sombra-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 class="sombra-texto">Desarrollamos Software</h3>
+                        <p class="sombra-texto">Trabajamos en desarrollo de productos o en proyectos para la obtención
+                            de aplicaciones a medida de las necesidades de nuestros clientes. Seguimos en todos los
+                            casos una metodología de desarrollo, optando por SCRUM en función de la tipología del
+                            proyecto, y aplicando los procedimientos y controles de nuestro sistema de gestión de la
+                            Calidad. Buscamos utilidad y eficacia a la hora de garantizar perfectos resultados.
+                        </p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/slider3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="sombra-texto">Tercer Slider</h3>
-                        <p class="sombra-texto">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3 class="sombra-texto">Diseño Web</h3>
+                        <p class="sombra-texto">De acuerdo a tus necesidades te proponemos varias opciones para mostrar
+                            tu negocio al mundo: Preparamos una versión inicial del trabajo a realizar y, mediante la
+                            interacción continua con el cliente, vamos aplicando las sucesivas mejoras y cambios que van
+                            surgiendo.</p>
                     </div>
                 </div>
             </div>
@@ -87,8 +104,16 @@
         </div>
     </article>
     <section class="bg-light text-center py-2">
+        </div>
+        <!-- BOTON MAL UBICADO -->
+        <!-- <div class="d-flex align-items-end flex-column margen-btn">
+            <div class="whatsapp">
+                <a href="##" target="_blank">
+                    <img src="img/whatsapp.png" alt="whatsapp" class="m-2">
+                </a>
+            </div> -->
         <div class="container">
-            <h2 class="py-2">Servicios</h2>
+            <h2 class="py-2" id="servicios">Servicios</h2>
             <div class="d-flex flex-wrap justify-content-around">
                 <div class="card col-sm-8 col-md-4 col-lg-3 shadow mb-3">
                     <i class="fab fa-audible fa-5x my-3 text-color py-3"></i>
@@ -97,29 +122,33 @@
                     </div>
                 </div>
                 <div class="card col-sm-8 col-md-4 col-lg-3 shadow mb-3">
-                    <i class="fab fa-buffer fa-5x my-3 text-color py-3"></i>
-                    <div class="card-body">
-                        <h5 class="card-text">Diseño de Apps</h5>
-                    </div>
-                </div>
-                <div class="card col-sm-8 col-md-4 col-lg-3 shadow mb-3">
                     <i class="fas fa-code fa-5x my-3 text-color py-3"></i>
                     <div class="card-body">
                         <h5 class="card-text">Desarrollo de Software</h5>
                     </div>
                 </div>
+                <div class="card col-sm-8 col-md-4 col-lg-3 shadow mb-3">
+                    <i class="fab fa-buffer fa-5x my-3 text-color py-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-text">Diseño de Gráfico</h5>
+                    </div>
+                </div>
+
             </div>
     </section>
     <section class="bg-white text-center py-2">
         <div class="container">
-            <h2 class="py-2">La Empresa</h2>
+            <h2 class="py-2" id="empresa">La Empresa</h2>
             <div class="row d-flex align-items-center">
                 <div class="col-sm-12 col-md-6 my-4">
                     <h4 class="text-center w-100 ">NUESTRA HISTORIA</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui inventore alias dolorum eligendi
-                        et, ipsa eum non temporibus magni aliquid sed nam fuga asperiores eius similique amet, modi ad
-                        pariatur beatae. Delectus itaque et numquam illo, exercitationem qui consequatur rerum esse
-                        corporis natus quaerat ad reprehenderit. Ullam quas quo ea.
+                    <p>VamTech, es una empresa de Software que avanza conforme al cambio tecnológico poniéndose a tono
+                        con las necesidades corporativas de las organizaciones y haciendo que las aplicaciones sirvan en
+                        el contexto operativo de las áreas cruciales. Es por eso que nace para poder poner al servicio
+                        de nuestros clientes, años de experiencia de cada uno de nuestros ingregantes, para así brindar
+                        soluciones que se adaptan a cada necesidad puntual.
+
+
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-6 my-4">
@@ -130,18 +159,18 @@
                 </div>
                 <div class="col-sm-12 col-md-6 my-3">
                     <h4 class="text-center w-100 ">QUE HACEMOS</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos sint ratione ipsa ab veniam
-                        molestias cupiditate, provident sed accusamus esse earum praesentium aliquid possimus assumenda.
-                        Nihil maxime reiciendis nobis! Nemo excepturi dolores porro illum molestiae similique delectus,
-                        dolorem animi quae.
-                    </p>
+                    Somos una empresa de software a medida con un equipo multidisciplinar. Nos encargamos de que la
+                    inteligencia digital se adapte a tu empresa para agilizar procesos que aumenten la productividad y
+                    las ventas. </p>
                 </div>
                 <div class="col-sm-12 col-md-6 my-4">
                     <h4 class="text-center w-100 ">NUESTRA VISION</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui inventore alias dolorum eligendi
-                        et, ipsa eum non temporibus magni aliquid sed nam fuga asperiores eius similique amet, modi ad
-                        pariatur beatae. Delectus itaque et numquam illo, exercitationem qui consequatur rerum esse
-                        corporis natus quaerat ad reprehenderit. Ullam quas quo ea.
+                    <p>Sabemos que el futuro viene de la mano de la tecnología. Una herramienta clave para mejorar
+                        procesos, comunicar mejor, reducir costes y agilizar tareas. Las Tecnologías de la Información y
+                        la Comunicación (TICC) nos permiten optimizar los procesos de las empresas y buscar respuestas
+                        concretas y adaptadas a cada negocio. Nuestra forma de trabajo se basa en crear soluciones a
+                        medida para cada cliente utilizando metodologías ágiles de desarrollo. Lo que implica que somos
+                        capaces de adaptarnos a las exigencias de cualquier proyecto y empresa.
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-6 my-4">
@@ -152,10 +181,10 @@
                 </div>
                 <div class="col-sm-12 col-md-6 my-3">
                     <h4 class="text-center w-100 ">NUESTRA MISION</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos sint ratione ipsa ab veniam
-                        molestias cupiditate, provident sed accusamus esse earum praesentium aliquid possimus assumenda.
-                        Nihil maxime reiciendis nobis! Nemo excepturi dolores porro illum molestiae similique delectus,
-                        dolorem animi quae.
+                    <p>Nuestra misión es resolver las necesidades de nuestros clientes apoyándonos en las nuevas
+                        tecnologías para adaptarlas a su entorno y potenciar su transformación digital. Nuestros
+                        esfuerzos van dirigidos a crear soluciones concretas para problemas específicos, partiendo
+                        siempre de metodologías ágiles de desarrollo.
                     </p>
                 </div>
 
@@ -168,99 +197,154 @@
                 <div class="col-sm-12 col-md-4">
                     <i class="fas fa-fist-raised fa-5x my-3 text-color"></i>
                     <p class="lead"> Determinación</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dignissimos numquam illum
-                        molestiae natus. Consequatur nemo reiciendis placeat totam facilis!
+                    <p>Tomamos decisiones importantes todos los días para ser considerados una solución efectiva.
+                        Estamos preparados para hacerlo y contamos con el soporte de profesionales expertos
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <i class="fas fa-laptop-house fa-5x my-3 text-color"></i>
                     <p class="lead"> Compromiso</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dignissimos numquam illum
-                        molestiae natus. Consequatur nemo reiciendis placeat totam facilis!
+                    <p>Tomamos las metas de nuestros clientes como propias, y contribuimos a alcanzarlas. Nos aseguramos
+                        que la calidad de nuestro trabajo y los plazos asumidos se cumplan conforme lo acordado.
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <i class="fas fa-hands-helping fa-5x my-3 text-color"></i>
                     <p class="lead"> Respeto</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dignissimos numquam illum
-                        molestiae natus. Consequatur nemo reiciendis placeat totam facilis!
+                    <p>Respetamos a las personas brindando oportunidades y valorando cada opinión.
+
+                        Respetamos a nuestros clientes cumpliendo con los acuerdos, siendo francos, directos y
+                        transparentes.
+
+                        Respetamos al medio ambiente promoviendo el trabajo remoto.
+
+
                     </p>
                 </div>
             </div>
     </section>
     <section class="bg-white text-center py-2">
         <div class="container">
-            <h2 class="py-2">Tecnologías</h2>
-            <div class="d-flex flex-wrap justify-content-center">
-                <img src="img/tecnologias1.png" alt="..." class="shadow m-2">
-                <img src="img/tecnologias2.png" alt="..." class="shadow m-2">
-                <img src="img/tecnologias3.png" alt="..." class="shadow m-2">
-                <img src="img/tecnologias4.png" alt="..." class="shadow m-2">
+            <h2 class="py-2" id="tecnologias">Tecnologías</h2>
+            <div class="my-4">
+                <h4>Frontend</h4>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="img/front1.png" alt="vue" class="shadow m-2">
+                    <img src="img/front2.png" alt="angular" class="shadow m-2">
+                    <img src="img/front3.png" alt="html" class="shadow m-2">
+                    <img src="img/front4.png" alt="css" class="shadow m-2">
+                    <img src="img/front5.png" alt="javascript" class="shadow m-2">
+                    <img src="img/front6.png" alt="dotnet" class="shadow m-2">
+                    <img src="img/front7.png" alt="websocket" class="shadow m-2">
+                    <img src="img/front8.png" alt="netcore" class="shadow m-2">
+                    <img src="img/front9.png" alt="ioninc" class="shadow m-2">
+                    <img src="img/front10.png" alt="bootstrap" class="shadow m-2">
+                    <img src="img/front11.png" alt="mvc" class="shadow m-2">
+
+
+                </div>
             </div>
-            <div class="d-flex flex-wrap justify-content-center">
-                <img src="img/tecnologias5.png" alt="..." class="shadow m-2">
-                <img src="img/tecnologias6.png" alt="..." class="shadow m-2">
-                <img src="img/tecnologias7.png" alt="..." class="shadow m-2">
-                <img src="img/tecnologias8.png" alt="..." class="shadow m-2">
+            <div class="my-2">
+                <h4>Backend</h4>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="img/back1.png" alt="nihibernate" class="shadow m-2">
+                    <img src="img/back2.png" alt="entity fwk" class="shadow m-2">
+                    <img src="img/back3.png" alt="firebase" class="shadow m-2">
+                    <img src="img/back4.png" alt="mongodb" class="shadow m-2">
+                    <img src="img/back5.png" alt="mysql" class="shadow m-2">
+                    <img src="img/back6.png" alt="oracle" class="shadow m-2">
+                    <img src="img/back7.png" alt="sql" class="shadow m-2">
+                    <img src="img/back8.png" alt="dotnet" class="shadow m-2">
+                    <img src="img/back9.png" alt="nodejs" class="shadow m-2">
+                    <img src="img/back10.png" alt="microservicios" class="shadow m-2">
+                    <img src="img/back11.png" alt="restapi" class="shadow m-2">
+                    <img src="img/back12.png" alt="dapper" class="shadow m-2">
+                </div>
             </div>
+        </div>
+        <div class="my-2">
+            <h4>Diseño</h4>
+            <div class="d-flex flex-wrap justify-content-center">
+                <img src="img/design1.png" alt="illustrator" class="shadow m-2">
+                <img src="img/design2.png" alt="photoshop" class="shadow m-2">
+                <img src="img/design3.png" alt="adobe xd" class="shadow m-2">
+                <img src="img/design4.png" alt="figma" class="shadow m-2">
+            </div>
+        </div>
 
     </section>
     <section class="bg-light text-center py-2">
         <div class="container">
             <h2 class="py-2">Flujo de trabajo</h2>
-            <div class="row d-flex flex-wrap justify-content-center">
+            <div class="row d-flex flex-wrap justify-content-center my-2">
                 <div>
                     <img src="img/tech1.png" alt="">
                     <h4>Brainstorming</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur!</p>
                 </div>
                 <div>
                     <img src="img/tech2.png" alt="">
                     <h4>Diseño</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur!</p>
                 </div>
 
                 <div>
                     <img src="img/tech3.png" alt="">
                     <h4>Desarrollo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur!</p>
                 </div>
                 <div>
                     <img src="img/tech4.png" alt="">
                     <h4>Testeo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur!</p>
                 </div>
                 <div>
                     <img src="img/tech5.png" alt="">
                     <h4>Deployment</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur!</p>
                 </div>
             </div>
     </section>
-    <section class="bg-white text-center py-2">
+    <section class="text-center py-5">
         <div class="container">
             <h2 class="py-2">Equipo</h2>
-            <div class="row d-flex flex-wrap justify-content-center">
-                <div>
-                    <img src="img/avatar1.jpg" alt="">
-                    <h4>Fernando</h4>
-                    <p>Lorem ipsum!</p>
+            <div class="row d-flex flex-wrap justify-content-around">
+                <div class="card col-sm-8 col-md-4 col-lg-2 shadow mb-3">
+                    <div class="my-4">
+                        <img src="img/avatar1.png" alt="" class="w-75">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text"><b>Fernando Sánchez</b></h5>
+                        <p>Backend Developer</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/avatar2.jpg" alt="">
-                    <h4>Dario</h4>
-                    <p>Lorem ipsum!</p>
+                <div class="card col-sm-8 col-md-4 col-lg-2 shadow mb-3">
+                    <div class="my-4">
+                        <img src="img/avatar2.png" alt="" class="w-75">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text"><b>Dario Juárez</b></h5>
+                        <p>Scrum Master & Team Leader</p>
+                    </div>
+                </div>
+                <div class="card col-sm-8 col-md-4 col-lg-2 shadow mb-3">
+                    <div class="my-4">
+                        <img src="img/avatar3.png" alt="" class="w-75">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text"><b>Mauricio G. Castro</b></h5>
+                        <p>UX/UI & Web Designer</p>
+                    </div>
+                </div>
+                <div class="card col-sm-8 col-md-4 col-lg-2 shadow mb-3">
+                    <div class="my-4">
+                        <img src="img/avatar4.png" alt="" class="w-75">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text"><b>Pablo ALcorta</b></h5>
+                        <p>Frontend Developer</p>
+                    </div>
                 </div>
 
-                <div>
-                    <img src="img/avatar3.jpg" alt="">
-                    <h4>Mauicio</h4>
-                    <p>Lorem ipsum!</p>
-                </div>
     </section>
     <section class="bg-light py-2">
         <div class="container">
-            <h2 class="py-2 text-center">Contacto</h2>
+            <h2 class="py-2 text-center" id="contacto">Contacto</h2>
             <article class="row no-gutters my-4">
                 <div class="col-md-6">
                     <iframe
@@ -274,7 +358,7 @@
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Nombre y Apellido</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Mauricio G. Castro" required>
+                                placeholder="Tu nombre y apellido" required>
                         </div>
 
                         <div class="form-group">
@@ -293,22 +377,27 @@
             </article>
     </section>
 
+
     <footer class="azul text-light py-4">
         <div class="container text-center">
-            <p class="lead mt-3"><strong>Vamtech Software</strong></p>
+            <div class="mb-3">
+                <img src="img/vamtech-marca.png" class="w-10" alt="logo de la empresa">
+            </div>
 
-            <a href="https://www.linkedin.com/in/mauricio-g-castro-0a75bb122/" target="_blank"><i
+            <a href="https://www.linkedin.com/company/68814925/" target="_blank"><i
                     class="fab fa-linkedin-in fa-2x text-light"></i></a>
-            <a href="https://github.com/MauricioGCastro" target="_blank"><i
-                    class="fab fa-github fa-2x mx-2 text-light"></i></a>
-            <a href="https://gitlab.com/MauricioGCastro" target="_blank"><i
-                    class="fab fa-gitlab fa-2x text-light"></i></a>
-            <a href="https://www.behance.net/MauricioGCastro" target="_blank"><i
+
+            <a href="https://www.facebook.com/Vamtech-Software-104462444752566" target="_blank"><i
+                    class="fab fa-facebook fa-2x text-light"></i></a>
+            <a href="https://www.behance.net/rrhhvamtech?tracking_source=search_users_recommended%7Cvamtech" target="_blank"><i
                     class="fab fa-behance fa-2x mx-2 text-light"></i></a>
-            <a href="https://www.instagram.com/mauriciogabriel/" target="_blank"><i
+            <a href="https://www.instagram.com/vamtech_software/" target="_blank"><i
                     class="fab fa-instagram fa-2x text-light"></i></a>
+            <a href="https://twitter.com/SoftwareVamtech" target="_blank"><i
+                    class="fab fa-twitter fa-2x text-light"></i></a>
+
             <hr>
-            <p>&copy; Todos los Derechos Reservados - Vamtech 2020</p>
+            <p>&copy; Todos los Derechos Reservados - Vamtech Software 2020</p>
         </div>
     </footer>
 
